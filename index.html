@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Honey Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .wrapper {
+        perspective: 10px;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+      .container {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        z-index: -1;
+      }
+      .mybackground,
+      .myforeground {
+        position: absolute;
+        height: 100vh;
+        object-fit: cover;
+        width: 100%;
+        z-index: -1;
+      }
+      .mybackground {
+        transform: translateZ(-40px) scale(5);
+      }
+      .myforeground {
+        transform: translateZ(-20px) scale(3);
+      }
+      h1 {
+        position: absolute;
+        color: white;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        top: 6rem;
+        font-size: 4rem;
+        letter-spacing: 5px;
+        margin: 0;
+      }
+      section {
+        background: rgb(45, 45, 45);
+        color: white;
+        padding: 5rem 0px;
+      }
+      .bg1 {
+        background-image: url(MyPhoto1.jpg);
+      }
+      .bg2 {
+        background-image: url(myphoto.jpg);
+      }
+      .bg3 {
+        background-image: url(MyPhoto3.jpg);
+      }
+      .bg {
+        position: relative;
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      .text{
+        font-size: 1.25rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0;
+        padding-bottom: 30px;
+        padding-top: 30px;
+      }
+      .secHeading{
+        font-size: 4rem;
+        padding: 20px;
+      }
+      .desc{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50px, -50px);
+        background-color: white;
+        border: 2px solid darkslategrey;
+        color: black;
+        border-radius: 7px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <img src="background.png" class="mybackground" />
+        <img src="MyForeground.png" class="myforeground" />
+        <h1>DR. SMRUTIREKHA MISHRA</h1>
+      </div>
+      <section>
+        <h2 class="secHeading">Smrutirekha Mishra</h2>
+        <p class="text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
+          quibusdam incidunt nostrum provident necessitatibus delectus?
+          Reiciendis quam eligendi alias maiores possimus! Rerum laudantium
+          optio neque aliquid eum, cumque perferendis repellendus. <br />
+          <br />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+          voluptates accusantium omnis quam reprehenderit repellat tempore,
+          dolorum deserunt, cupiditate consectetur molestiae consequuntur quae
+          soluta aperiam quisquam harum asperiores id maxime!
+        </p>
+        <div class="bg bg1">
+          <h2 class="desc">BARSHA</h2>
+        </div>
+        <p class="text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
+          quibusdam incidunt nostrum provident necessitatibus delectus?
+          Reiciendis quam eligendi alias maiores possimus! Rerum laudantium
+          optio neque aliquid eum, cumque perferendis repellendus. <br />
+          <br />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+          voluptates accusantium omnis quam reprehenderit repellat tempore,
+          dolorum deserunt, cupiditate consectetur molestiae consequuntur quae
+          soluta aperiam quisquam harum asperiores id maxime!
+        </p>
+
+        <div class="bg bg2">
+          <h2 class="desc">BARSHA</h2>
+        </div>
+        <p class="text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
+          quibusdam incidunt nostrum provident necessitatibus delectus?
+          Reiciendis quam eligendi alias maiores possimus! Rerum laudantium
+          optio neque aliquid eum, cumque perferendis repellendus. <br />
+          <br />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+          voluptates accusantium omnis quam reprehenderit repellat tempore,
+          dolorum deserunt, cupiditate consectetur molestiae consequuntur quae
+          soluta aperiam quisquam harum asperiores id maxime!
+        </p>
+
+        <div class="bg bg3">
+          <h2 class="desc">BARSHA</h2>
+        </div>
+        <p class="text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
+          quibusdam incidunt nostrum provident necessitatibus delectus?
+          Reiciendis quam eligendi alias maiores possimus! Rerum laudantium
+          optio neque aliquid eum, cumque perferendis repellendus. <br />
+          <br />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+          voluptates accusantium omnis quam reprehenderit repellat tempore,
+          dolorum deserunt, cupiditate consectetur molestiae consequuntur quae
+          soluta aperiam quisquam harum asperiores id maxime!
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
